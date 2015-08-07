@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#77dbdead"
+    tools:context=".Home"
+
+    android:id="@+id/mianLayout">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/score"
+            android:id="@+id/tvscore"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/beast"
+            android:id="@+id/tvbest"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        >
+        <Button
+            android:id="@+id/restar"
+            android:background="@drawable/btrstart"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:onClick="restar"/>
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/goToHome"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bthome"
+            android:onClick="goToHome"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/soundSwitch"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:onClick="change"/>
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.lang.game20488.GameView
+        android:layout_width="fill_parent"
+        android:layout_gravity="center"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/gameView" >
+    </com.lang.game20488.GameView>
+</LinearLayout>
